@@ -1,0 +1,16 @@
+@-moz-document url("about:newtab") {
+.search-handoff-button{
+  background: transparent var(--newtab-search-icon) 16px center no-repeat !important;
+  border-radius: 50px !important;
+    backdrop-filter: brightness(0.7);
+
+}
+.search-wrapper input{
+padding-inline-start: 60px !important;
+}
+/*
+.search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button{
+    box-shadow:0px 0px 0px transparent !important;
+    border: 0px solid transparent !important;
+}*/
+}
