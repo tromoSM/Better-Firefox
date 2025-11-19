@@ -27,6 +27,19 @@ padding-left: 60px !important;
     z-index: -1 !important;
     animation: yogurt 0.5s forwards 1  cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.tab-throbber {
+  @media (prefers-reduced-motion: no-preference) {
+    :root[sessionrestored] & {
+      &[progress]::before {
+        fill: rgb(255, 255, 255) !important;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+
 @keyframes yogurt {
     from{
         transform: scale(0);
@@ -104,6 +117,11 @@ body{
     bottom: 0;
     transform: translate(-50%,20px);
     overflow: none !important;
+}
+.context-menu{
+    border-radius: 15px !important;
+    background: rgba(54, 54, 54, 0.568) !important;
+    backdrop-filter: blur(15px);
 }
 .top-site-outer:hover .title .title-label{
     min-height: 16px !important;
