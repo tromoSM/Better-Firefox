@@ -6,11 +6,11 @@ body{
   transition: 0.2s;
 }
 .searchmode-switcher{
-    background-color: var(--toolbar-field-background-color) !important;
+    background-color: rgb(53,53,53)  !important;
     
 }
 toolbar .toolbaritem-combined-buttons{
-    background: var(--toolbar-field-background-color)   !important;
+    background: rgb(53,53,53)    !important;
   height: fit-content   !important;
   vertical-align: middle   !important;
   align-self: center   !important;
@@ -38,10 +38,11 @@ cursor: pointer !important;
 
 .toolbarbutton-1[command="cmd_newNavigatorTab"]:hover{
     transform: rotate(90deg);
+    transition: 0.2s ;
 }
 
 .toolbarbutton-1[command="cmd_newNavigatorTab"]:active{
-    transform: rotate(90deg) scale(0.8); 
+    transform: rotate(90deg) scale(0.9); 
 
 }
 .toolbarbutton-1[command="cmd_newNavigatorTab"]{
@@ -62,9 +63,24 @@ cursor: pointer !important;
   cursor: pointer;
   margin: 2px !important;
 }
+.tab-close-button,.close-icon{
+    border-radius: 50px !important;
+    transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.close-icon{
+    animation: yogurt 0.3s forwards 1 ;
+}
+.tab-close-button:hover{
+  transform: scale(1.1);
+}
+.tab-close-button:hover .close-icon{
+ filter: blur(1px);
+}
+
 .titlebar-close::before,.titlebar-restore::before,.titlebar-min::before,.titlebar-max::before{
   background: aliceblue !important;
   border-radius: 50px !important;
+    transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
   width: 10px !important;
   height: 10px !important;
   content: '' !important;
@@ -93,7 +109,7 @@ cursor: pointer !important;
   filter: brightness(0.8);
   transform: scale(1.1);
 }
-.titlebar-min:active,.titlebar-close:active,.titlebar-restore:active,.titlebar-max:active{
+.titlebar-min:active::before,.titlebar-close:active::before,.titlebar-restore:active::before,.titlebar-max:active::before{
   filter: brightness(0.7);
   transform: scale(0.8);
 }
