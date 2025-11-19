@@ -1,14 +1,144 @@
 @-moz-document url("about:newtab") {
+    :root{
+--newtab-primary-action-background: transparent  !important;
+--newtab-primary-action-background-dimmed:transparent !important;
+}
 .search-handoff-button{
   background: transparent var(--newtab-search-icon) 16px center no-repeat !important;
   border-radius: 50px !important;
     backdrop-filter: brightness(0.7);
 
 }
-.search-wrapper input{
-padding-inline-start: 60px !important;
+.fake-editable{
+padding-left: 60px !important;
+}
+.logo{
+    position: relative !important;
+}
+.logo::before{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    content: '';
+    filter: blur(5px);
+    background-image: url("file:///C:/Users/T/AppData/Roaming/Mozilla/Firefox/Profiles/1ve1v9hm.default-release/chrome/userchrome/content/lg.png") !important;
+    height: 100%;
+    background-size: cover;
+    z-index: -1 !important;
+    animation: yogurt 0.5s forwards 1  cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes yogurt {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+body{
+    position: relative !important;
+    background: #1d1d1d !important;
+    z-index: 1 !important;
+}
+
+.logo-and-wordmark .wordmark{
+    filter: drop-shadow(0px 0px 15px rgba(240, 248, 255, 0.418));
+}
+.tile{
+    border-radius: 50px !important;
+    transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: rgb(53,53,53) !important;
+}
+.top-site-outer .context-menu-button{
+    transition: 0.2s transform !important;
+    transform: scale(0);right: 0 !important;
+  top: 0 !important;
+    margin: 5px!important;
+    border-radius: 50px !important;
+}
+.top-site-outer{
+    min-height: 115px !important;
+    width: 115px !important;
+    transition: 0.2s background-color !important;
+}
+.search-handoff-button .fake-textbox{
+    padding-left: 5px !important;
+}
+.top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) .icon-pin-small{
+    transform: translate(0px);
+}
+.icon.icon-pin-small{
+    transform: translate(-10px,-10px);
+    transition: 0.2s;
+}
+.top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) .tile{
+    box-shadow:none!important;
+}
+.top-site-outer:hover .tile{
+    background-color: #5b5b5b !important;
+    scale: 1.1;
+}
+.top-site-outer:hover .context-menu-button{
+    transform: scale(1);
+}
+.top-site-outer .context-menu-button::before{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-radius: 50px;
+    top: 0;
+  content: '';
+  z-index: -1;
+  position: absolute !important;
+}
+.search-handoff-button:hover{
+    backdrop-filter: brightness(0.5) !important;
+}
+.top-sites-list .top-site-outer .title .title-label{
+    height: 0px !important;
+    text-align: center;
+    transition: 0.2s !important;
+    min-height: 0px !important;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,20px);
+    overflow: none !important;
+}
+.top-site-outer:hover .title .title-label{
+    min-height: 16px !important;
+    font-family: SF Pro;
+    height: 16px !important;
 }
 /*
+body::before{
+    inset: 0;
+    content: '';
+    filter: blur(0px);
+    height: 100%;
+    position: fixed;
+    mask-size: 100% 100%;
+    pointer-events: none;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("file:///C:/Users/T/AppData/Roaming/Mozilla/Firefox/Profiles/1ve1v9hm.default-release/chrome/userchrome/content/yo.jpg") !important;
+}
+body::before{
+    inset: 0;
+    content: '';
+    filter: blur(0px);
+    height: 100%;
+    position: fixed;
+    mask-image: linear-gradient(to left, white, transparent);
+    mask-size: 100% 100%;
+    pointer-events: none;
+    z-index: -1;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-image: url("file:///C:/Users/T/AppData/Roaming/Mozilla/Firefox/Profiles/1ve1v9hm.default-release/chrome/userchrome/content/min.png") !important;
+}
 .search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button{
     box-shadow:0px 0px 0px transparent !important;
     border: 0px solid transparent !important;
