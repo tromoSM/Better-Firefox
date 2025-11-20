@@ -17,6 +17,7 @@ html,body{
 *{
     color-scheme: dark !important;
     color: white !important;
+    font-family: SF Pro,inter,sans-serif !important;
 }
 .fake-editable{
 padding-left: 60px !important;
@@ -112,6 +113,23 @@ body{
   content: '';
   z-index: -1;
   position: absolute !important;
+}
+.personalizeButtonWrapper{
+    display: none !important;
+}
+.card-outer{
+    background: #353535 !important;
+    border-radius: 15px !important;
+}
+.compact-cards .card-outer .card-context{
+    background-color: #353535 !important;
+    border-radius: 50px !important;
+}
+.card-text{
+    text-decoration: none !important;
+}
+.card-outer .context-menu-button{
+    background-color: rgb(45, 45, 45) !important;
 }
 .search-handoff-button:hover{
     backdrop-filter: brightness(0.5) !important;
