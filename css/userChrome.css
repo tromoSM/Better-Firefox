@@ -85,13 +85,36 @@ body{
     }
   }
 }
+menuitem,menu{
+  background: rgba(255, 255, 255, 0) !important;
+  border-radius: 50px !important;
+}
+menuitem:hover,menu:hover{
+  background: rgba(255, 255, 255, 0.116) !important;
+}
+.menupopup-arrowscrollbox{
+  outline: none !important;
+  border-radius: 15px !important;
+  border: none !important;
+  font-size: 12px !important;
+  background-color: rgb(49, 49, 49) !important;
+}
+
 .close-icon{
   fill: white !important;
 }
 .tab-text {
   color: white !important;
 }
+@keyframes yogurt-open-search{
+  from{
+    text-shadow: 0px 0px 2px aliceblue;
+  }
 
+  to{
+    text-shadow: none;
+  }
+}
 .browser-toolbox-background {
   position: relative;
   background-color: #0d0d0d !important;
@@ -115,8 +138,9 @@ toolbar .toolbaritem-combined-buttons{
   align-self: center   !important;
   border-radius: 50px   !important;
 }
-p,html,body,button{
-    font-family: SF Pro   !important;
+*{
+    font-family: SF Pro,inter,sans-serif !important;
+
 }
 button{
 cursor: pointer !important;
