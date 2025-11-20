@@ -5,6 +5,105 @@
 body{
   transition: 0.2s;
 }
+:root{
+  &[lwtheme]{
+  --lwt-accent-color: rgb(13, 13, 13) !important;
+  --lwt-text-color: rgba(255, 255, 255) !important;
+  --arrowpanel-background: rgb(36, 36, 36) !important;
+  --arrowpanel-color: rgb(255, 255, 255) !important;
+  --arrowpanel-border-color: rgb(47, 47, 47) !important;
+  --toolbar-field-background-color: rgb(53, 53, 53) !important;
+  --toolbar-bgcolor: rgb(23, 23, 23) !important;
+  --toolbar-color: rgb(185, 185, 185) !important;
+  --toolbar-field-color: rgb(255, 255, 255) !important;
+  --toolbar-field-border-color: rgba(0, 0, 0, 0) !important;
+  --toolbar-field-focus-background-color: rgba(53, 53, 53, 1) !important;
+  --toolbar-field-focus-color: rgb(255, 255, 255) !important;
+  --lwt-toolbar-field-highlight: rgba(147, 147, 147, 0.3400000035762787) !important;
+  --toolbarbutton-icon-fill: rgb(255, 255, 255) !important;
+  --newtab-text-primary-color: rgb(255, 255, 255) !important;
+  --lwt-background-alignment: top !important;
+  --lwt-background-tiling: repeat !important;
+  --tab-loading-fill: rgb(37, 37, 37) !important;
+  --tab-selected-bgcolor: rgb(49, 49, 49) !important;
+  --tab-selected-textcolor: rgb(255, 255, 255) !important;
+  --lwt-tab-line-color: rgb(37, 37, 37) !important;
+  --chrome-content-separator-color: rgb(38, 38, 38) !important;
+  --toolbarbutton-hover-background: rgb(39, 39, 40) !important;
+  --toolbarbutton-active-background: rgb(38, 38, 38) !important;
+  --sidebar-background-color: rgb(21, 21, 21) !important;
+  --sidebar-text-color: rgb(255, 255, 255) !important;
+  --sidebar-border-color: rgb(33, 33, 33);
+  }
+}
+.tab-background {
+  &:is([selected], [multiselected]) {
+    background-color: rgb(49, 49, 49) !important;
+    box-shadow: 0px 0px 0px rgb(23,23,23) !important;
+    outline-color: rgba(37, 37, 37, 0) !important;
+  }
+}
+
+.browser-toolbar{
+  background-color: #0d0d0d !important;
+}
+#nav-bar {
+  :root[sessionrestored][lwtheme] & {
+    transition: var(--ext-theme-background-transition);
+    background: rgb(23, 23, 23) !important;
+  }
+}
+.toolbarbutton-animatable-box, .toolbarbutton-1 {
+  color: inherit;
+  -moz-context-properties: fill, fill-opacity;
+  fill: white !important;
+}
+.urlbar-background, #searchbar {
+  background-color: rgb(53, 53, 53) !important;
+  background-clip: border-box;
+  border: 1px solid transparent !important;
+  border-radius: var(--toolbarbutton-border-radius);
+}
+
+.urlbar:is([focused], [open]) > .urlbar-background, #searchbar:focus-within {
+  background-color: #353535 !important;
+}
+.urlbarView-body-inner {
+  #urlbar[open] > .urlbarView > .urlbarView-body-outer > & {
+    border-top: 1px #ffffff0a solid !important;
+  }
+}
+[open] > .urlbar-background {
+  border-color: transparent !important;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.13);
+}
+.urlbarView-row-inner {
+  &:not([type="tip"], [type="dynamic"]) {
+    :root:not([uidensity="compact"]) & {
+      min-height: 32px;
+      margin-top: 0px ;
+    }
+  }
+}
+.close-icon{
+  fill: white !important;
+}
+.tab-text {
+  color: white !important;
+}
+
+.browser-toolbox-background {
+  position: relative;
+  background-color: #0d0d0d !important;
+  color: white !important;
+  will-change: background-color;
+  transition: background-color var(--inactive-window-transition);
+  color-scheme: dark !important;
+}
+.tabbrowser-tab {
+  background-color: transparent !important;
+  overflow: clip;
+}
 .searchmode-switcher{
     background-color: rgb(53,53,53)  !important;
     
