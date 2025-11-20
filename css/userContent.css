@@ -9,6 +9,15 @@
     backdrop-filter: brightness(0.7);
 
 }
+html,body{
+    scrollbar-width: thin !important;
+    color: white !important;
+    scrollbar-color: #1d1d1d,#333 !important;
+}
+*{
+    color-scheme: dark !important;
+    color: white !important;
+}
 .fake-editable{
 padding-left: 60px !important;
 }
@@ -123,11 +132,15 @@ body{
     background: rgba(54, 54, 54, 0.568) !important;
     backdrop-filter: blur(15px);
 }
+.lightWallpaper .logo-and-wordmark .wordmark {
+  color-scheme: dark !important;
+}
 .top-site-outer:hover .title .title-label{
     min-height: 16px !important;
     font-family: SF Pro;
     height: 16px !important;
 }
+
 /*
 body::before{
     inset: 0;
