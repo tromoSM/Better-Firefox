@@ -1,3 +1,4 @@
+![](https://github.com/tromoSM/tromoSM/blob/main/Projects/Better-Firefox/betterFirefox.png?raw=true)
 # Installation
 - install [this theme](https://addons.mozilla.org/en-US/firefox/addon/better-dark-mode/) mozilla addons.
 - Navigate to `about:support` and find 'Profile folder' and click 'open folder'.
