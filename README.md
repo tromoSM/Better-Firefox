@@ -5,6 +5,8 @@
 Enhance Firefox with a cleaner dark interface and custom UI tweaks.
 
 ---
+<h1>Preview</h1>
+<img width="588" height="384" alt="Screenshot (722)" src="https://github.com/user-attachments/assets/49f9f0dd-a44f-43ea-abbe-eeeba152594a" />
 
 # Installation
 
