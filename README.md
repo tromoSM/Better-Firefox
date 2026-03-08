@@ -11,27 +11,27 @@ Enhance Firefox with a cleaner dark interface and custom UI tweaks.
 1. Download [better-firefox-v1.0.zip](https://github.com/tromoSM/Better-Firefox/releases/download/v1.0/better-firefox-v1.0.zip) from the [latest release](https://github.com/tromoSM/Better-Firefox/releases/latest/)  
 2. Extract the ZIP file.
 
-4. Install the [Better Dark Mode](https://addons.mozilla.org/en-US/firefox/addon/better-dark-mode/) theme from Mozilla Add-ons:  
-  
-5. Open Firefox settings and set the appearance to **Dark**:  
+3. Install the [Better Dark Mode](https://addons.mozilla.org/en-US/firefox/addon/better-dark-mode/) theme from Mozilla Add-ons.
+
+4. Open Firefox settings and set the appearance to **Dark**:  
    `about:preferences#general`
 
-6. Copy the `chrome` folder from the extracted files.
+5. Copy the `chrome` folder from the extracted files.
 
-7. Open your Firefox profile folder:
+6. Open your Firefox profile folder:
    - Type `about:support` in the Firefox address bar.
    - Find **Profile Folder** and click **Open Folder**.
 
-8. Paste the copied `chrome` folder into the profile folder you just opened.  
+7. Paste the copied `chrome` folder into the profile folder you just opened.  
    If prompted, choose **Replace the files in the destination**.
 
-9. Enable custom stylesheets:
+8. Enable required settings in `about:config`:
    - Type `about:config` in the Firefox address bar.
    - Click **Accept the Risk and Continue**.
-   - Search for `toolkit.legacyUserProfileCustomizations.stylesheets`.
-   - Set the value to `true`.
+   - Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`.
+   - Search for `layout.css.backdrop-filter.enabled` and `layout.css.backdrop-filter.force-enabled` and set it to `true`.
 
-10. Close and reopen Firefox to apply the changes.
+9. Close and reopen Firefox to apply the changes.
 
 ---
 
@@ -47,5 +47,5 @@ https://github.com/tromoSM
 
 ---
 
-Better firefox - v1.0 (2025/11)
+Better Firefox - v1.0 (2025/11)  
 © 2026 - tromoSM. All rights reserved.
