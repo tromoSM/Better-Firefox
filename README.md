@@ -30,12 +30,17 @@ Enhance Firefox with a cleaner dark interface and custom UI tweaks.
    - Click **Accept the Risk and Continue**.
    - Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`.
    - Search for `layout.css.backdrop-filter.enabled` and `layout.css.backdrop-filter.force-enabled` and set it to `true`.
+9. Open firefox settings > home and set "Homepage and new windows" to custom URLs > type "about:newtab".
+   `about:preferences#home`
 
-9. Close and reopen Firefox to apply the changes.
+10. Click `Ctrl + Shift + B` in firefox for the best experience.
+
+11. Close and reopen Firefox to apply the changes.
 
 ---
 
-Tip: Update Firefox to the latest version for the best experience.
+> [!TIP]
+> Update Firefox to the latest version for the best experience.
 
 ---
 
