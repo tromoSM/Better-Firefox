@@ -38,7 +38,8 @@ Enhance Firefox with a cleaner dark interface and custom UI tweaks.
 11. Close and reopen Firefox to apply the changes.
 
 ---
-
+# Compatibility
+- better firefox is better with firefox 145.0.0 or later 
 > [!TIP]
 > Update Firefox to the latest version for the best experience.
 
