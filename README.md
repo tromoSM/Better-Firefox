@@ -61,3 +61,4 @@ https://github.com/tromoSM
 
 Better Firefox - v1.0 (2025/11)  
 © 2026 - tromoSM. All rights reserved.
+##### [send feedback or request features](https://tromosm.ct.ws/?feedback=true)
