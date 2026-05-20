@@ -3,6 +3,8 @@
 # Better Firefox
 
 Enhance Firefox with a cleaner dark interface and custom UI tweaks.
+![IDK]
+> unsupported after firerfox 151.0
 
 ---
 <h1>Preview</h1>
