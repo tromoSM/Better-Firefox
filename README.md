@@ -3,9 +3,11 @@
 # Better Firefox
 
 Enhance Firefox with a cleaner dark interface and custom UI tweaks.
-![IDK]
-> unsupported after firerfox 151.0
 
+>[!NOTE]
+> If you recently updated to 151 or later after applying this theme, please follow these steps:
+> - go to `about:config`
+> - Search for <code>browser.newtabpage.activity-stream.nova.enabled</code> and set it to <code>false</code>.
 ---
 <h1>Preview</h1>
 <p align="center">
@@ -34,16 +36,20 @@ Enhance Firefox with a cleaner dark interface and custom UI tweaks.
    If prompted, choose **Replace the files in the destination**.
 
 8. Enable required settings in `about:config`:
-   - Type `about:config` in the Firefox address bar.
-   - Click **Accept the Risk and Continue**.
-   - Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`.
-   - Search for `layout.css.backdrop-filter.enabled` and `layout.css.backdrop-filter.force-enabled` and set it to `true`.
-9. Open firefox settings > home and set "Homepage and new windows" to custom URLs > type "about:newtab".
+    <ul>
+     <li> Type <code>about:config</code> in the Firefox address bar.</li>
+     <li> Click <strong>Accept the Risk and Continue</strong>.</li>
+     <li> Search for <code>toolkit.legacyUserProfileCustomizations.stylesheets</code> and set it to <code>true</code>.</li>
+     <li> Search for <code>layout.css.backdrop-filter.enabled</code> and <code>layout.css.backdrop-filter.force-enabled</code> and set it to <code>true</code>.</li>
+     <li>Search for <code>browser.newtabpage.activity-stream.nova.enabled</code> and set it to <code>false</code>.</li>
+    </ul>
+ 
+10. Open firefox settings > home and set "Homepage and new windows" to custom URLs > type "about:newtab".
    `about:preferences#home`
 
-10. Click `Ctrl + Shift + B` in firefox for the best experience.
+11. Click `Ctrl + Shift + B` in firefox for the best experience.
 
-11. Close and reopen Firefox to apply the changes.
+12. Close and reopen Firefox to apply the changes.
 
 ---
 # Compatibility
